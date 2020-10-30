@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+
+	"name": "REWE nutrition info",
+	"short_name": "REWE nutrition info",
+	"description": "Chrome-Extension that automatically displays a nutrition chart next to nutrition tables.",
+	"version": "1.0.0",
+
+	"icons": {
+		"128": "icon.png"
+	},
+
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": ["https://shop.rewe.de/p/*"],
+			"js": ["js/chartGenerator.js"]
+		}
+	],
+
+	"permissions": [
+		"tabs"
+	]
+}
