@@ -18,7 +18,7 @@
 
 	const init = () => {
 		// find table
-		nutritionTable = document.querySelector(".pdr-NutritionTable");
+		nutritionTable = document.querySelector(".pdpr-NutritionTable");
 		if (nutritionTable == null) {
 			return;
 		}
